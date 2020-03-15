@@ -1,0 +1,6 @@
+overwrite: true
+schema: "src/**/typeDefs.ts"
+generates:
+  src/types.ts:
+    plugins:
+      - "typescript"

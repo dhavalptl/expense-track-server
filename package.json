@@ -1,0 +1,30 @@
+{
+  "name": "expense-track-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "generate": "graphql-codegen --config codegen.yml",
+    "prestart": "yarn generate",
+    "predev": "yarn generate"
+  },
+  "dependencies": {
+    "apollo-server": "2.11.0",
+    "graphql": "14.6.0",
+    "graphql-tag": "^2.10.3",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/graphql": "14.5.0",
+    "@types/node": "^13.9.1",
+    "@types/uuid": "^7.0.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.8.3",
+    "@graphql-codegen/cli": "^1.13.0",
+    "@graphql-codegen/typescript": "^1.13.0",
+    "@graphql-codegen/typescript-operations": "^1.13.0"
+  }
+}
