@@ -28,8 +28,8 @@ export const resolvers: IResolvers = {
         }
     },
     Mutation: {
-        addTransaction: (parent, {transactionInput}: {transactionInput: TransactionInput}, {transactions}: { transactions: Array<Transaction> }): Transaction => {
-            const newTransaction = { ...transactionInput, id: uuidv4() };
+        addTransaction: (parent, {transaction}: {transaction: TransactionInput}, {transactions}: { transactions: Array<Transaction> }): Transaction => {
+            const newTransaction = { ...transaction, id: uuidv4() };
             transactions.push(newTransaction);
             return newTransaction;
         },
