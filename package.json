@@ -10,7 +10,7 @@
     "predev": "npm run generate"
   },
   "dependencies": {
-    "apollo-server": "2.11.0",
+    "apollo-server": "2.25.3",
     "graphql": "14.6.0",
     "graphql-tag": "^2.10.3",
     "uuid": "^7.0.2",
